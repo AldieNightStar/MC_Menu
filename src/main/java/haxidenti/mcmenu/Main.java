@@ -46,22 +46,6 @@ public class Main extends JavaPlugin implements Listener {
     }
 
     @EventHandler
-    public void x(PlayerDropItemEvent e) {
-        Player player = e.getPlayer();
-        MCPageMenu menu = new MCPageMenu();
-
-        for (int i = 0; i < 25; i++) {
-            final int c = i;
-
-            menu.addItem( "Say " + i, () -> player.chat("C: " + c));
-        }
-
-        menu.setTitle("C say's");
-
-        menu.showForPlayer(player);
-    }
-
-    @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
 
