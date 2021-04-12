@@ -1,0 +1,9 @@
+main: haxidenti.mcmenu.Main
+name: Menus
+version: 1.0
+author: haxidenti
+api-version: 1.13
+commands:
+  menu:
+    description: Show the current menu
+    usage: /menu
